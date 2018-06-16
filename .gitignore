@@ -5,3 +5,14 @@ myvenv
 db.sqlite3
 /static
 .DS_Store
+
+
+
+To push blog into internet
+
+$ git status
+$ git add --all .
+$ git commit -m "My Django Girls app, first commit"
+
+$ git remote add origin https://github.com/bharathshivaswamy/My_Blog.git
+$ git push -u origin master
