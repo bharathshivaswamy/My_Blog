@@ -642,6 +642,18 @@ function testLocalStorageData() {
 
 <!-- Login content Ends -->
 
+<!-- Django posts -->
+
+{% for post in posts %}
+  <div>
+    <h2><a href="#">Title:{{post.title}}</a></h2>
+    <p>{{post.text}}</p>
+    <p>Created date:{{post.created_date}}</p>
+    <p>Published date:{{post.published_date|linebreaksbr}}</p>  
+  </div>
+{% endfor %}
+<!-- Django posts ends -->
+
 <footer >
 <div class="foot-main">
  <ul class="nav justify-content-center">
